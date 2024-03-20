@@ -95,6 +95,17 @@ trait InteractsWithIO
     }
 
     /**
+     * Check if the given argument is filled.
+     *
+     * @param  string|null  $key
+     * @return bool
+     */
+    public function argumentFilled($key = null)
+    {
+        return filled($this->argument($key));
+    }
+
+    /**
      * Determine if the given option is present.
      *
      * @param  string  $name
