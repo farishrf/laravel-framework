@@ -97,10 +97,10 @@ trait InteractsWithIO
     /**
      * Check if the given argument is filled.
      *
-     * @param  string|null  $key
+     * @param  string  $key
      * @return bool
      */
-    public function argumentFilled($key = null)
+    public function argumentFilled($key)
     {
         return filled($this->argument($key));
     }
